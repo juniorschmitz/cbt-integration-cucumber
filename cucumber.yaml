@@ -1,0 +1,11 @@
+---
+avengers_assemble: -p default -p chrome -p html -p pretty
+ci: -p default -p headless -p json -p pretty
+default: ENV_TYPE=default
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+headless: BROWSER=headless
+html: --format html --out=log/report.html
+json: --format json --out=log/report.json
+pretty: --format pretty
+progress: --format progress
